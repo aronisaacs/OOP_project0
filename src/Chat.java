@@ -2,50 +2,39 @@ import java.util.Scanner;
 
 /**
  * the Chat object, containing main, which allows two bots to reply one to the other
+ * @see ChatterBot
  * @author Aron Isaacs
  */
 class Chat {
-	/**
-	 * legal requests for the first bot:
-	 */
+	/** legal requests for the first bot:*/
 	public static final String[] FIRST_LEGAL_REQUESTS =
-			{"okay " + ChatterBot.PLACEHOLDER_FOR_REQUESTED_PHRASE + " ",
+			{"okay " + ChatterBot.PLACEHOLDER_FOR_REQUESTED_PHRASE,
 			"okay!!" + " " + ChatterBot.PLACEHOLDER_FOR_REQUESTED_PHRASE, "whats up " +
 			ChatterBot.PLACEHOLDER_FOR_REQUESTED_PHRASE};
 
-	/** legal requests for the second bot:
-	 */
+	/** legal requests for the second bot:*/
 	public static final String[] SECOND_LEGAL_REQUESTS = {"fine "
 			+ ChatterBot.PLACEHOLDER_FOR_REQUESTED_PHRASE,
-			"fine!! " + ChatterBot.PLACEHOLDER_FOR_REQUESTED_PHRASE + " "};
+			"fine!! " + ChatterBot.PLACEHOLDER_FOR_REQUESTED_PHRASE};
 
-	/** illegal requests for the first bot:
-	 */
+	/** illegal requests for the first bot: */
 	public static final String[] FIRST_ILLEGAL_REQUESTS = {"what",
-			"say I should say " + ChatterBot.PLACEHOLDER_FOR_ILLEGAL_REQUEST + " "};
+			"say I should say " + ChatterBot.PLACEHOLDER_FOR_ILLEGAL_REQUEST};
 
-	/** illegal requests for the second bot:
-	 */
-	public static final String[] SECOND_ILLEGAL_REQUESTS = {"whaaat ",
-			"say say " + ChatterBot.PLACEHOLDER_FOR_ILLEGAL_REQUEST + " "};
-	/**
-	 * the opening statement of the conversation:
-	 */
+	/** illegal requests for the second bot: */
+	public static final String[] SECOND_ILLEGAL_REQUESTS = {"whaaat",
+			"say say " + ChatterBot.PLACEHOLDER_FOR_ILLEGAL_REQUEST};
+
+	/** the opening statement of the conversation: */
 	public static final String OPENING_STATEMENT = "say hello world";
 
-	/**
-	 * the name of the first bot:
-	 */
+	/** the name of the first bot: */
 	public static final String FIRST_BOT_NAME = "Sammy";
 
-	/**
-	 * the name of the second bot:
-	 */
+	/** the name of the second bot: */
 	public static final String SECOND_BOT_NAME = "Ruthy";
 
-	/**
-	 * a constant for ": ":
-	 */
+	/** a constant for ": ": */
 	public static final String SEMI_COLON_SPACE = ": ";
 
 	/**
