@@ -112,7 +112,8 @@ class ChatterBot {
 	 * @return the bot's response
 	 */
 	String replyToIllegalRequest(String statement) {
-		return replacePlaceholderInARandomPattern(illegalRequestsReplies, PLACEHOLDER_FOR_ILLEGAL_REQUEST,
+		return replacePlaceholderInARandomPattern(illegalRequestsReplies,
+				PLACEHOLDER_FOR_ILLEGAL_REQUEST,
 				statement);
 	}
 
@@ -122,7 +123,8 @@ class ChatterBot {
 	 * @return the bot's response
 	 */
 	String replyToLegalRequest(String statement) {
-		return replacePlaceholderInARandomPattern(legalRequestsReplies, PLACEHOLDER_FOR_REQUESTED_PHRASE,
+		return replacePlaceholderInARandomPattern(legalRequestsReplies,
+				PLACEHOLDER_FOR_REQUESTED_PHRASE,
 				statement);
 	}
 
